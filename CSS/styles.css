@@ -1,0 +1,96 @@
+/* ============================================================
+   RappiWallet — estilos propios sobre Bootstrap 5
+   ============================================================ */
+
+:root {
+  --rw-primary: #ff5a1f;
+  --rw-primary-dark: #e04a12;
+  --rw-bg: #f4f5f7;
+  --rw-text: #1f2933;
+}
+
+body {
+  background-color: var(--rw-bg);
+  color: var(--rw-text);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* --- Navbar / botones primarios con el color de marca --- */
+.bg-primary {
+  background-color: var(--rw-primary) !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--rw-primary);
+  --bs-btn-border-color: var(--rw-primary);
+  --bs-btn-hover-bg: var(--rw-primary-dark);
+  --bs-btn-hover-border-color: var(--rw-primary-dark);
+  --bs-btn-active-bg: var(--rw-primary-dark);
+  --bs-btn-active-border-color: var(--rw-primary-dark);
+  --bs-btn-disabled-bg: var(--rw-primary);
+  --bs-btn-disabled-border-color: var(--rw-primary);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--rw-primary);
+  --bs-btn-border-color: var(--rw-primary);
+  --bs-btn-hover-bg: var(--rw-primary);
+  --bs-btn-hover-border-color: var(--rw-primary);
+  --bs-btn-active-bg: var(--rw-primary);
+  --bs-btn-active-border-color: var(--rw-primary);
+}
+
+.text-primary {
+  color: var(--rw-primary) !important;
+}
+
+/* --- Layout --- */
+main.container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  max-width: 960px;
+}
+
+.card {
+  border: none;
+  border-radius: 0.9rem;
+}
+
+.hero {
+  padding: 3rem 1rem;
+}
+
+/* --- Agenda de contactos (enviar dinero) --- */
+.contacto-seleccionado.active {
+  background-color: var(--rw-primary);
+  border-color: var(--rw-primary);
+}
+
+#lista-contactos .list-group-item {
+  cursor: pointer;
+}
+
+/* --- Montos en el listado de movimientos --- */
+.monto-ingreso {
+  color: #198754;
+}
+
+.monto-egreso {
+  color: #dc3545;
+}
+
+/* --- Ajustes responsive --- */
+@media (max-width: 575.98px) {
+  main.container {
+    padding-top: 1.25rem;
+  }
+
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+
+  .display-6 {
+    font-size: 2rem;
+  }
+}
