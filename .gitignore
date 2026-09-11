@@ -1,0 +1,10 @@
+# Sistema operativo
+Thumbs.db
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Dependencias (por si se agrega tooling más adelante)
+node_modules/
